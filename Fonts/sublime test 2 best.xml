@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="66" name="Sublime Text 2 (Enhanced for Light Background)" modified="2025-02-08 11:30:00" author="Filip Minev (Modified)">
+    <!-- Search result highlighting -->
+    <searchResultIndication color="#8B8B8B" />
+    <filteredSearchResultIndication color="#8B8B8B" />
+    <occurrenceIndication color="#111111" />
+    <writeOccurrenceIndication color="#111111" />
+    <findScope color="#111111" />
+    <deletionIndication color="#CC0000" />
+
+    <sourceHoverBackground color="#F0F0F0" />
+
+    <!-- Stronger Comments (Previously too light) -->
+    <singleLineComment color="#505050" />
+    <multiLineComment color="#505050" />
+    <commentTaskTag color="#505050" />
+
+    <!-- Darkened Javadoc -->
+    <javadoc color="#505050" />
+    <annotation color="#505050" />
+
+    <javadocLink color="#9C846A" />
+    <javadocTag color="#9C846A" />
+    <javadocKeyword color="#A0B240" />
+
+    <!-- Improved Class & Interface Colors -->
+    <class color="#0086C6" bold="true" />
+    <interface color="#0086C6" bold="true" />
+    <method color="#4A8500" bold="true" />
+    <methodDeclaration color="#4A8500" bold="true" />
+
+    <!-- Brackets & Numbers Darkened -->
+    <bracket color="#A0A0A0" bold="true" />
+    <number color="#7A3DB5" bold="true" />
+
+    <!-- Strings & Operators -->
+    <string color="#A68B00" bold="true" />
+    <operator color="#D00050" bold="true" />
+    <keyword color="#D00050" bold="true" />
+
+    <staticMethod color="#4A8500" italic="true" />
+    <localVariable color="#806040" />
+    <localVariableDeclaration color="#806040" />
+    <field color="#806040" />
+    <staticField color="#806040" />
+    <staticFinalField color="#806040" />
+
+    <!-- Darker Deprecated and Inherited Methods -->
+    <deprecatedMember color="#CC0000" bold="true" />
+    <inheritedMethod color="#4D7ABB" />
+    <abstractMethod color="#4D7ABB" />
+
+    <parameterVariable color="#3060BF" bold="true" />
+    <typeArgument color="#7C5050" />
+    <typeParameter color="#7C5050" />
+
+    <!-- Darker UI Elements -->
+    <background color="#FFFFFF" />
+    <currentLine color="#B0B0B0" />
+    <foreground color="#3C2F22" />  <!-- Darker text -->
+    <lineNumber color="#555555" />
+
+    <!-- Stronger Selection -->
+    <selectionBackground color="#996600" />
+    <selectionForeground color="#202020" />
+</colorTheme>

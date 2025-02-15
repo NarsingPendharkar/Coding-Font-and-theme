@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="2422" name=" Narsing best of all time" modified="2024-11-30 10:00:00" author="Narsing Pendharkar">
+    <!-- Search result highlighting -->
+    <searchResultIndication color="#FFB3B3" />
+    <filteredSearchResultIndication color="#FF80FF" />
+    <occurrenceIndication color="#FFD700" />
+    <writeOccurrenceIndication color="#FFA500" />
+
+    <!-- Find scope highlighting -->
+    <findScope color="#99CCFF" />
+
+    <!-- Deletion indication -->
+    <deletionIndication color="#FF4500" bold="false" italic="false" />
+
+    <!-- Hover and background settings -->
+    <sourceHoverBackground color="#F8F8F8" />
+
+    <!-- Commenting Styles -->
+    <singleLineComment color="#75715E" italic="true" /> <!-- Darker Greenish-Gray -->
+    <multiLineComment color="#75715E" italic="true" />
+    <commentTaskTag color="#FF4500" bold="false" italic="true" underline="true" />
+
+    <!-- Javadoc and Documentation Styles -->
+    <javadoc color="#75715E" italic="true" />
+    <javadocLink color="#8A2BE2" bold="true" />
+    <javadocTag color="#C71585" italic="true" />
+    <javadocKeyword color="#FF4500" bold="true" />
+
+    <!-- Class, Interface, Method colors -->
+    <class color="#037BFA" bold="true" italic="false" />
+    <interface color="#7800FF" bold="true" />
+    <method color="#FF8000" bold="true" />
+    <methodDeclaration color="#FF8000" bold="true" />
+
+    <!-- Bracket & Number Styling -->
+    <bracket color="#00BFFF" bold="false" /> <!-- Sky Blue -->
+    <number color="#FFD700" bold="true" italic="false" />
+
+    <!-- String and Operator colors -->
+    <string color="#FF1493" bold="true" underline="false" />
+    <operator color="#FF4500" bold="true" />
+
+    <!-- Keyword colors (Enhanced) -->
+    <keyword color="#FF0000" bold="true" /> <!-- Bright Red for High Visibility -->
+
+    <!-- Annotation, Static Method, and Variable Styling -->
+    <annotation color="#808080" italic="true" />
+    <staticMethod color="#088A08" italic="true" />
+
+    <!-- Variable Colors -->
+    <localVariable color="#8A2BE2" bold="false" />
+    <localVariableDeclaration color="#32CD32" />
+    <field color="#8B008B" bold="false" />
+    <staticField color="#32CD32" />
+
+    <!-- Enum, Deprecated, and Inherited Method Styling -->
+    <enum color="#1ABC9C" bold="false" />
+    <deprecatedMember color="#FF0000" bold="true" />
+    <inheritedMethod color="#2C3E50" />
+    <abstractMethod color="#2C3E50" />
+
+    <!-- Parameter and Type Settings -->
+    <parameterVariable color="#F39C12" />
+    <typeArgument color="#D35400" />
+    <typeParameter color="#D35400" />
+
+    <!-- Constant Color -->
+    <constant color="#2E8B57" />
+
+    <!-- General UI Settings -->
+    <background color="#FFFFFF" /> <!-- Light background (Unchanged) -->
+    <currentLine color="#D6EAF8" /> <!-- Subtle blue highlight -->
+    <foreground color="#2C3E50" /> <!-- Dark text for contrast -->
+    <lineNumber color="#95A5A6" />
+    <selectionBackground color="#B5D5FF" /> <!-- Softer blue selection -->
+    <selectionForeground color="#2C3E50" />
+</colorTheme>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="2422" name="Narsing" modified="2012-08-21 23:13:29" author="Sushil Kumar Bhaskar">
+    <searchResultIndication color="#FFDF99" />
+    <filteredSearchResultIndication color="#FFDF99" />
+    <occurrenceIndication color="#FFCFBB" />
+    <writeOccurrenceIndication color="#FFCFBB" />
+    <findScope color="#BDD8F2" />
+    <deletionIndication color="#9B5656" bold="false" italic="false" />
+    <sourceHoverBackground color="#EEEEEE" />
+    <singleLineComment color="#AAAAAA" bold="false" italic="false" underline="false" strikethrough="false" />
+    <multiLineComment color="#AAAAAA" bold="false" italic="false" underline="false" strikethrough="false" />
+    <commentTaskTag color="#295F94" bold="false" italic="false" underline="true" strikethrough="false" />
+    <javadoc color="#404040" bold="false" italic="false" />
+    <javadocLink color="#AD95AF" bold="false" italic="false" />
+    <javadocTag color="#777777" bold="false" italic="false" />
+    <javadocKeyword color="#CC9393" bold="false" underline="false" strikethrough="false" />
+    <class color="#037BFA" bold="true" italic="false" underline="false" strikethrough="false" />
+    <interface color="#7800FF" bold="true" />
+    <method color="#FF8000" bold="true" />
+    <methodDeclaration color="#FF8000" bold="true" />
+    <bracket color="#000000" bold="false" />
+    <number color="#0404B4" bold="true" italic="false" underline="false" strikethrough="false" />
+    <string color="#0404B4" bold="true" underline="false" strikethrough="false" />
+    <operator color="#FF007F" bold="false" />
+    <keyword color="#FF007F" bold="false" italic="false" underline="false" strikethrough="false" />
+    <annotation color="#808080" bold="false" />
+    <staticMethod color="#088A08" bold="false" italic="false" />
+    <localVariable color="#557755" bold="false" italic="false" underline="false" strikethrough="false" />
+    <localVariableDeclaration color="#B05A65" bold="false" />
+    <field color="#3B0B17" bold="false" italic="false" />
+    <staticField color="#088A08" bold="false" />
+    <staticFinalField color="#088A08" />
+    <deprecatedMember color="#FF0000" bold="false" />
+    <enum color="#088A08" bold="false" />
+    <inheritedMethod color="#2C577C" />
+    <abstractMethod color="#2C577C" />
+    <parameterVariable color="#557755" bold="false" />
+    <typeArgument color="#885D3B" />
+    <typeParameter color="#885D3B" />
+    <constant color="#0A0B0C" />
+    <background color="#FFFFFF" />
+    <currentLine color="#E0E0FF" />
+    <foreground color="#585858" />
+    <lineNumber color="#AFBFCF" />
+    <selectionBackground color="#BDD8F2" />
+    <selectionForeground color="#666666" />
+</colorTheme>
