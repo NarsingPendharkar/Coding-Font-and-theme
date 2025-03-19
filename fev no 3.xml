@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colorTheme id="2422" name="Nirav's Best Eclipse Theme" modified="2025-03-15 12:00:00" author="Nirav">
+    
+    <!-- Search and Highlighting Colors -->
+    <searchResultIndication color="#F9C66D"/>
+    <filteredSearchResultIndication color="#F4A3C2"/>
+    <occurrenceIndication color="#FFC300"/>
+    <writeOccurrenceIndication color="#FF8C42"/>
+    
+    <!-- Find Scope -->
+    <findScope color="#C5E1FF"/>
+    
+    <!-- Deletion Indication -->
+    <deletionIndication color="#E57373" italic="false"/>
+    
+    <!-- Background and Hover Settings -->
+    <sourceHoverBackground color="#F5F5F5"/>
+    
+    <!-- Comment Styles -->
+    <singleLineComment color="#6A737D" italic="true"/>
+    <multiLineComment color="#6A737D" italic="true"/>
+    <commentTaskTag color="#D73A49" italic="true" underline="true"/>
+    
+    <!-- Javadoc Styles -->
+    <javadoc color="#6A737D" italic="true"/>
+    <javadocLink color="#005CC5"/>
+    <javadocTag color="#A626A4" italic="true"/>
+    <javadocKeyword color="#D73A49"/>
+    
+    <!-- Class, Interface, and Method Colors -->
+    <class color="#007ACC"/>
+    <interface color="#6F42C1"/>
+    <method color="#D67F00"/>
+    <methodDeclaration color="#D67F00"/>
+    
+    <!-- Brackets and Numbers -->
+    <bracket color="#0087BD"/>
+    <number color="#E6B422"/>
+    
+    <!-- Strings and Operators -->
+    <string color="#D63384"/>
+    <operator color="#E74C3C"/>
+    
+    <!-- Keyword Styling -->
+    <keyword color="#D73A49"/>
+    
+    <!-- Annotation, Static Methods, and Variables -->
+    <annotation color="#707070" italic="true"/>
+    <staticMethod color="#008000"/>
+    
+    <!-- Variable Colors -->
+    <localVariable color="#7957D5"/>
+    <localVariableDeclaration color="#008000"/>
+    <field color="#9B59B6"/>
+    <staticField color="#32CD32"/>
+    
+    <!-- Enum, Deprecated, and Inherited Method Styling -->
+    <enum color="#16A085"/>
+    <deprecatedMember color="#D73A49"/>
+    <inheritedMethod color="#2C3E50"/>
+    <abstractMethod color="#2C3E50"/>
+    
+    <!-- Parameter and Type Colors -->
+    <parameterVariable color="#E67E22"/>
+    <typeArgument color="#E67E22"/>
+    <typeParameter color="#D35400"/>
+    
+    <!-- Constant Color -->
+    <constant color="#2E8B57"/>
+    
+    <!-- General UI Settings -->
+    <background color="#FFFFFF"/>
+    <currentLine color="#EAECEE"/>
+    <foreground color="#2C3E50"/>
+    <lineNumber color="#A6A6A6"/>
+    <selectionBackground color="#B5D5FF"/>
+    <selectionForeground color="#2C3E50"/>
+    
+</colorTheme>
