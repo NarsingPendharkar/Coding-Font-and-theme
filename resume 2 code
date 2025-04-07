@@ -1,0 +1,283 @@
+%%%%
+% MTecknology's Resume
+%%%%
+% Author: Michael Lustfield
+% License: CC-BY-4
+% - https://creativecommons.org/licenses/by/4.0/legalcode.txt
+%%%%
+
+\documentclass[letterpaper,10pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+%% NOTE: Everything between here and END_FILE can
+%% be relocated to "mteck.sty" and then included with:
+%\usepackage{mteck}
+
+% Dependencies
+% NOTE: Some packages (lastpage, hyperref) require second build!
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+
+% Sans-Serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+%\usepackage[default]{sourcesanspro}
+
+% Serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% Colors
+% Use with \color{Name}
+% Can wrap entire heading with {\color{accent} [...] }
+\usepackage{xcolor}
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+% Misc. Options
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+% Adjust Margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+% ATS Readability
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%-----------------%
+% Custom Commands %
+%-----------------%
+
+% Centered title along with subtitle between HR
+% Usage: \documentTitle{Name}{Details}
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{10pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    %{\footnotesize\color{accentTitle} #2}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+% Create a footer with correct padding
+% Usage: \documentFooter{\thepage of X}
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+% Simple wrapper to set up page numbering
+% Usage: \numberedPages
+% WARNING: Must run pdflatex twice!
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+% Section heading with horizontal rule
+% Usage: \section{Title}
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+% Section heading with separator and content on same line
+% Usage: \tinysection{Title}
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+% Indented line with arguments left/right aligned in document
+% Usage: \heading{Left}{Right}
+\newcommand{\heading}[2]{
+  \hspace{10pt}#1\hfill#2\\
+}
+
+% Adds \textbf to \heading
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+% Adds \textit to \heading
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+% Template for itemized lists
+% Usage: \begin{resume_list} [items] \end{resume_list}
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+  %\vspace{-2pt}
+}
+
+% Formats an item to use as an itemized title
+% Usage: \itemTitle{Title}
+\newcommand{\itemTitle}[1]{
+  \item[] \underline{#1}\vspace{4pt}
+}
+
+% Bullets used in itemized lists
+\renewcommand\labelitemi{--}
+
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+%===================%
+% John Doe's Resume %
+%===================%
+
+%\numberedPages % NOTE: lastpage requires a second build
+%\documentFooter{\thepage of 2} % Does similar without using lastpage
+\begin{document}
+
+  %---------%
+  % Heading %
+  %---------%
+
+  \documentTitle{Narsing Pendharkar}{
+    % Web Version
+    %\raisebox{-0.05\height} \faPhone\ [redacted - web copy] ~
+    %\raisebox{-0.15\height} \faEnvelope\ [redacted - web copy] ~
+    %%
+    \href{tel:+919209259093}{
+      \raisebox{-0.05\height} \faPhone\ 9209259093} ~ | ~
+    \href{mailto:mailtonarsing@gmail.com}{
+      \raisebox{-0.15\height} \faEnvelope\ mailtonarsing@gmail.com} ~ | ~
+    \href{https://linkedin.com/in/narsingp}{
+      \raisebox{-0.15\height} \faLinkedin\ linkedin.com/in/NARSINGP} ~ | ~
+    \href{https://github.com/NarsingPendharkar}{
+      \raisebox{-0.15\height} \faGithub\ github.com/NARSINGP}
+  }
+
+  %---------%
+  % Summary %
+  %---------%
+
+  \tinysection{Summary}
+  Seeking a software developer role that allows me to utilize my 3+ years of development experience, innovative
+mindset, and problem-solving skills to help a company achieve its software development objectives.
+
+  %--------%
+  % Skills %
+  %--------%
+
+ 
+
+\section{Technical Skills}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Languages} & Java \\
+\textbf{Java Concepts} & JDBC, Servlet, JSP, Collection Framework, String Class, OOP Concepts \\
+\textbf{Databases} & SQL, MySQL, Microsoft SQL Server Management Studio \\
+\textbf{Web Technologies } & HTML5, CSS, JavaScript, jQuery, JSP \& Servlet \\
+\textbf{Frameworks} & Spring, Spring MVC, Hibernate, Spring Boot, Spring Data JPA \\
+\textbf{Web Services} & Designing and implementing REST APIs using the Spring Framework \\
+\textbf{Build Tools} & Maven \\
+\textbf{Server} & Apache Tomcat 9 \\
+\textbf{IDEs} & Eclipse, STS-4, VS Code, IntelliJ IDEA \\
+\end{tabular}
+
+
+
+
+
+
+  %------------%
+  % Experience %
+  %------------%
+
+  \section{Experience}
+
+\headingBf{Tata Consultancy Services (TCS)}{Pune, Maharashtra}
+\headingIt{Software Developer}{Feb 2022 -- Present}{}
+
+\begin{resume_list}
+ \vspace{5pt}
+    \itemTitle{\textbf{Role and Responsibilities}}
+    \item Developing, testing, and maintaining web applications using \textbf{Java, Spring MVC, Hibernate, Spring Data JPA, JSP, JavaScript, and jQuery}.
+    \item Implemented and integrated \textbf{RESTful APIs} for seamless communication between client and server.
+    \item Ensured high-quality code through adherence to coding standards and active participation in \textbf{code reviews}.
+    \item Diagnosed and resolved issues in existing applications, ensuring \textbf{minimal downtime} and smooth operation.
+    \item Created and maintained comprehensive \textbf{technical documentation}, including system design and user manuals.
+    \item Actively participated in scrum meetings under \textbf{Agile methodology} to discuss progress and challenges.
+    \item Provided guidance and support to \textbf{junior developers}, fostering a collaborative and productive team environment.
+    \item Worked closely with \textbf{stakeholders} to gather requirements, design solutions, and provide ongoing support.
+\end{resume_list}
+
+
+ 
+
+  %-----------%
+  % Education %
+  %-----------%
+
+  \section{Education}
+
+  \headingBf{Rashtrasant Tukadoji Maharaj Nagpur University}{Nagpur,Maharashtra}{} % Note: Adding year(s) exposes an implied age
+  \headingIt{Bachelor in Electrical Engineering (BE)}{July 2018 -- May 2021}{}
+
+  \headingIt{CGPA: 8.5 }{}
+
+  \vspace{5pt}
+  
+
+  %----------------------------%
+  % Extracurricular Activities %
+  %----------------------------%
+
+  \section{Projects}
+
+  \headingBf{NBC Development}{Mar 2022 -- Present}
+  \begin{resume_list}
+    \item NBC Development is an online banking application that enables clients to manage their business operations on the web. It simplifies transactions, manages insurance and pension services, and enhances the overall customer experience.
+      \vspace{5pt}
+     \item{\textbf{Technologies Used:} Java, Spring MVC, Spring Data JPA, RESTful Web Services, SQL, JSP, Servlet, Js, Jquery }
+    
+  \end{resume_list}
+
+  \section{Self-Declaration}
+I do hereby declare that the above information is true and complete to the best of my knowledge and belief. 
+
+\begin{flushright}
+\textbf{Narsing Pendharkar} \\  
+\textit{Place: \hspace{1cm} \underline{\hspace{3cm}}} \\  
+\textit{Date: \hspace{1cm} \underline{\hspace{3cm}}}  
+\end{flushright}
+
+
+\end{document}
